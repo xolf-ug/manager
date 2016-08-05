@@ -1,9 +1,7 @@
 <?php
-include 'vendor/autoload.php';
+include 'core/autoload.php';
 
-include 'pdf.php';
-
-$io = new Xolf\io\Client(__DIR__ . '/io-db');
+$manager = new Manager();
 
 $inputs = [
     ['name', 'Name'],
